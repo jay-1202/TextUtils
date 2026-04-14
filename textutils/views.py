@@ -55,34 +55,3 @@ def analyze(request):
         return HttpResponse('ERROR')
     
     return render(request, 'analyze.html', params)
-
-
-def removepunc(request):
-    return HttpResponse('remove punctuation')
-
-def capfirst(request):
-    return HttpResponse('capitalize first')
-
-def newremove(request):
-    return HttpResponse('new line remove')
-
-def spaceremove(request):
-    return HttpResponse('space remove')
-
-def charcount(request):
-    return HttpResponse('character count')
-
-
-def about(request):
-    return HttpResponse('about page')
-
-def ex1(request):
-    s='''
-    <h2>Navigation Bar <br></h2>
-    <a href="https://www.google.com">Google</a><br>
-    <a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a><br>
-    <a href="https://drive.google.com/drive/u/0/home">Drive</a><br>
-    <a href="https://www.google.com/maps?authuser=0">Maps</a><br>
-    <a href="https://www.youtube.com/?authuser=0">Youtube</a><br>
-    '''
-    return HttpResponse(s)

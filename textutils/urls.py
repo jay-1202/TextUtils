@@ -23,17 +23,7 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    # added amnually
+    # added manually
     path('', views.index, name='index'),
     path('analyze/', views.analyze, name='analyze'),
-
-    # path('removepunc/', views.removepunc, name='removepunc'),
-    # path('capfirst/', views.capfirst, name='capfirst'),
-    # path('newlineremove/', views.newremove, name='newremove'),
-    # path('spaceremove/', views.spaceremove, name='spaceremove'),
-    # path('charcount/', views.charcount, name='charcount'),
-
-    # path('about/', views.about, name='about'),
-
-    path('ex1/', views.ex1, name='ex1'),
 ]
